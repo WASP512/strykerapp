@@ -34,6 +34,7 @@ import com.google.android.material.button.MaterialButton;
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 import com.google.android.material.textfield.TextInputEditText;
 import com.zalexdev.stryker.about.AboutFragment;
+import com.zalexdev.stryker.guide.GuideFragment;
 import com.zalexdev.stryker.appintro.AppIntroActivity;
 import com.zalexdev.stryker.coremanger.CoreManager;
 import com.zalexdev.stryker.custom.Device;
@@ -91,7 +92,7 @@ public class MainActivity extends AppCompatActivity {
     private static final java.util.Set<Integer> ROOT_ONLY_IDS = new java.util.HashSet<>(java.util.Arrays.asList(
             R.id.hid_item, R.id.usb_arsenal_item, R.id.macchanger_item));
     private static final java.util.Set<Integer> VM_INDEPENDENT_IDS = new java.util.HashSet<>(java.util.Arrays.asList(
-            R.id.dasboard_item, R.id.logs_item, R.id.about_item,
+            R.id.dasboard_item, R.id.logs_item, R.id.about_item, R.id.guide_item,
             R.id.wpair_item, R.id.geomac_item));
     private MetasploitUtils metasploitUtils;
     private ArrayList<WiFINetwork> networks;
@@ -874,6 +875,7 @@ public class MainActivity extends AppCompatActivity {
             if (itemId == R.id.nmap_item) return new NmapScanner();
             if (itemId == R.id.wpair_item) return new WpairFragment();
             if (itemId == R.id.about_item) return new AboutFragment();
+            if (itemId == R.id.guide_item) return new GuideFragment();
             if (itemId == R.id.logs_item) return new com.zalexdev.stryker.logger.LoggerFragment();
             if (itemId == R.id.vnc_item) return new VNCFragment();
             if (itemId == R.id.hid_item) return new HidFragment();
@@ -931,6 +933,7 @@ public class MainActivity extends AppCompatActivity {
         m.put(R.id.vnc_item,          new DrawerSpec("VNC desktop",      R.drawable.vnc,         0xFF5E35B1));
         m.put(R.id.usb_arsenal_item,  new DrawerSpec("USB Arsenal",      R.drawable.usb,         0xFF1565C0));
         m.put(R.id.manager_item,      new DrawerSpec("Core manager",     R.drawable.tune,        0xFF5E35B1));
+        m.put(R.id.guide_item,        new DrawerSpec("Guide & tutorial", R.drawable.ic_outline_help, 0xFF1565C0));
         m.put(R.id.about_item,        new DrawerSpec("About",            R.drawable.info_outlined, 0xFF1565C0));
         return m;
     }

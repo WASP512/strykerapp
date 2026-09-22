@@ -250,6 +250,10 @@
             layout="@layout/drawer_row" />
 
         <include
+            android:id="@+id/guide_item"
+            layout="@layout/drawer_row" />
+
+        <include
             android:id="@+id/about_item"
             layout="@layout/drawer_row" />
 
