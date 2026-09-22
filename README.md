@@ -13,6 +13,14 @@ StrykerOSS bundles a curated set of network, wireless and web security tools int
 
 ---
 
+## Download
+
+Prebuilt APKs are published on the [**Releases**](https://github.com/zalexdev/strykerapp/releases) page — grab the latest `StrykerOSS-<version>.apk` and install it on a **rooted** device (see [Installation](#installation-end-users)).
+
+Releases are produced automatically by the `Release APK` GitHub Actions workflow when a `v*` tag is pushed (e.g. `git tag v6.0.1 && git push origin v6.0.1`).
+
+---
+
 ## Capabilities
 
 | Module | Description |
